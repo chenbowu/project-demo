@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFF;
+  font-size: 14px;
+}
+
+body a {
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'SOurce Sans Pro', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+ul, label {
+  margin: 0;
+  padding: 0;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+.top-nav {
+  padding-top: 3em;
+  background-color: #79A7B5;
+  position: relative;
+}
+
+.logo h1 {
+  font-size: 3.5em;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.logo h1 a {
+  color: #FFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.top-nav ul li {
+  margin-left: 2em;
+  display: inline-block;
+}
+
+.top-nav ul li a {
+  font-size: 1.3em;
+  color: #FFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 35px;
+  font-weight: 400;
+  z-index: 999;
+}
+
+.top-nav ul li a:hover,
+.top-nav ul li.active a {
+  color: #D63D2E;
+  background: none;
+}
+
+.top-nav ul li h4 {
+  font-size: 1.2em;
+  color: #FFF;
+  line-height: 1.6em;
+  font-weight: 400;
+  padding: 0.4em;
+}
+
+.top-nav ul li.phn-no {
+  position: absolute;
+  right: 6%;
+  z-index: 99999;
+}
+
+.cl-effect-5 li a{
+  overflow: hidden;
+  padding: 0;
+}
+
+.cl-effect-5 li a span {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.cl-effect-5 li a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.cl-effect-5 li a:hover span,
+.cl-effect-5 li a:focus span,
+.cl-effect-5 li a.active span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+
+	color: #D63D2E;
+}

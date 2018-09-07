@@ -30,28 +30,32 @@
     <!-- Move to behind so the pages load faster -->
     <!-- <script type="text/javascript" src="./js/responsiveslides.min.js"></script> -->
     <script type="text/javascript" src="./js/wow.min.js"></script>
+
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
   </head>
   <body>
     <!-- navigation -->
     <div id="navg" class="top-nav">
       <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header logo">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <h1><a href="index.html">WAN MEN</a></h1>
+          <h1 class="wow bounceIn animated"><a href="index.html">WAN MEN</a></h1>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul>
+          <ul class="nav navbar-nav navbar-left cl-effect-5">
             <li class="active"><a href="index.html"><span data-hover="首页">首页</span></a></li>
             <li><a href="#about"><span data-hover="关于">关于</span></a></li>
             <li><a href="#service"><span data-hover="服务">服务</span></a></li>
-            <li><a href="gallery"><span data-hover="图片库">图片库</span><span data-hover="关于">关于</span></a></li>
-            <li><a href="contact"><span data-hover="联系我们">联系我们</span></a></li>
-            <li><h4> 400-0000-0000 </h4></li>
+            <li><a href="#gallery"><span data-hover="图片库">图片库</span></a></li>
+            <li><a href="#contact"><span data-hover="联系我们">联系我们</span></a></li>
+            <li class="phn-no wow fadeInRight animated" data-wow-delay="0.5s"><h4> 400-0000-0000 </h4></li>
           </ul>
           <div class="clearfix"></div>
         </div>

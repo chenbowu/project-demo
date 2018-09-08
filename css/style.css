@@ -120,3 +120,56 @@ body a:hover {
 
 	color: #D63D2E;
 }
+
+@media(max-width:767px) {
+  .top-nav {
+    padding: 1.5em 1.5em 0;
+  }
+
+  button.navbar-toggle {
+    background: #E74C3C;
+    border-color: #FFF;
+    margin: 0;
+  }
+
+  .navbar-toggle .icon-bar {
+    background: #FFF;
+  }
+
+  .top-nav ul li {
+    display: block;
+    margin: 0.5em 0;
+    text-align: center;
+  }
+
+  .top-nav ul li a {
+    z-index: 0;
+  }
+
+  div#bs-example-navbar-collapse-1 {
+    margin: 0;
+    padding: 0;
+    overflow: inherit;
+    box-shadow: none;
+  }
+
+  ul.nav.navbar-right {
+    text-align: center;
+  }
+
+  ul.nav.navbar-nav.navbar-left.cl-effect-5 {
+    margin: 0.5em 0;
+    padding: 0 0 0.5em 0;
+    border: 1px solid #FFF;
+  }
+
+  .top-nav ul li.phn-no {
+    position: inherit;
+  }
+
+  .top-nav ul li h4 {
+    padding-top: 0;
+  }
+
+
+}

@@ -72,6 +72,56 @@
     </div>
     <!-- end navigation -->
 
+    <!-- banner -->
+    <div>
+      <div id="home" class="banner">
+        <script type="text/javascript" src="./js/responsiveslides.min.js"></script>
+        <script type="text/javascript">
+          $(function() {
+            $("#slides3").responsiveslides({
+              auto: true,
+              pager: false,
+              nav: false,
+              speed: 500,
+              namespace: "callbacks",
+              before: function() {
+                $('.events').append("<li>before event fired.</li>");
+              },
+              after: function() {
+                $('.events').append("<li>after event fired.</li>");
+              }
+            });
+          });
+        </script>
+        <div id="top" class="callback_container">
+          <ul id="slides3" class="rslides">
+            <li>
+              <div class="banner-text-info">
+                <h3 class="bnr-text">XXXX XXX XXXXXX XXXXXX <br /><span>Xxxxxx xxxxx xxxxxx</span>xxxxx xx xxx</h3>
+              </div>
+            </li>
+            <li>
+              <div class="banner-text-info">
+                <h3 class="bnr-text">XXXX XXX XXXXXX XXXXXX <br /><span>Xxxxxx xxxxx xxxxxx</span>xxxxx xx xxx</h3>
+              </div>
+            </li>
+            <li>
+              <div class="banner-text-info">
+                <h3 class="bnr-text">XXXX XXX XXXXXX XXXXXX <br /><span>Xxxxxx xxxxx xxxxxx</span>xxxxx xx xxx</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <h2 class="wow fadeInUpBig animated" date-wow-delay="0.5s">UUUU uuuu</h2>
+          <div class="bnr-right">
+            <h4>AAAA AA AA aaa</h4>
+            <p>BBBB BBB Bbbb</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end banner -->
     <script type="text/javascript" src="./js/bootstrap.js"></script>
   </body>
 </html>

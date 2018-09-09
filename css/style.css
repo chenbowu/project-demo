@@ -223,6 +223,179 @@ h3.bnr-text {
 	margin-top: 0.8em;
 }
 
+
+.welcome {
+	padding: 7em 0;
+}
+
+h3.title {
+	font-size: 4em;
+	text-align: center;
+	color: #E74C3C;
+}
+
+.welcome h4 {
+	font-size: 1.8em;
+	text-align: center;
+	line-height: 1.6em;
+	color: #404040;
+	font-weight: 300;
+	width: 75%;
+	margin: 1em auto;
+	border-bottom: 1px solid #DEDEDE;
+	padding-bottom: 1em;
+}
+
+p {
+	font-size: 1em;
+	color: #999;
+	line-height: 1.8em;
+}
+
+p.w-text {
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.welcome-row {
+	margin-top: 3em;
+}
+
+.welcome-row img {
+	width: 100%;
+}
+
+.grid {
+	text-align: center;
+}
+
+.grid figure {
+	position: relative;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	max-width: 100%;
+	opacity: 0.8;
+	width: 100%;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #FFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure h5 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+	font-size: 2.3em;
+}
+
+.grid figure h5 span {
+	font-weight: 800;
+}
+
+.grid figure p {
+	font-size: 1.1em;
+	color: #EAEAEA;
+}
+
+figure.effect-ming {
+	background: #030C17;
+	color: #EAEAEA;
+}
+
+figure.effect-ming img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	-moz-transition: opacity 0.35s;
+	-o-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-ming figcaption:before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 2px solid #FFF;
+	box-shadow: 0 0 0 30px rgba(255,255,255,0.4);
+	content: "";
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	-moz-transition: opacity 0.35s, -moz-transform 0.35s;
+	-o-transition: opacity 0.35s, -o-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	transform: scale(1.4);
+
+}
+
+figure.effect-ming h5 {
+	margin: 13% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	-moz-transition: -moz-transform 0.35s;
+	-o-transition: -o-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-ming p {
+	padding: 0.5em 1em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	-moz-transition: opacity 0.35s, -moz-transform 0.35s;
+	-o-transition: opacity 0.35s, -o-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-ming:hover h5 {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-ming:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-ming:hover img {
+	opacity: 0.4;
+}
+
 @media(max-width:767px) {
   .top-nav {
     padding: 1.5em 1.5em 0;
@@ -247,6 +420,40 @@ h3.bnr-text {
   .top-nav ul li a {
     z-index: 0;
   }
+
+	.banner {
+		min-height: 338px;
+	}
+
+	.banner:after {
+		right: 17%;
+		width: 28%;
+		top: 1%;
+	}
+
+	h3.bnr-text {
+		font-size: 1.3em;
+	}
+
+	.banner-text-info {
+		margin: 3em 0 3em 8em;
+		width: 34%;
+	}
+
+	.banner h2 {
+		font-size: 3.2em;
+	}
+
+	.bnr-right {
+		right: -5%;
+		width: 29%;
+		top: 45%;
+	}
+
+	.bnr-right {
+		font-size: 1em;
+		margin-top: 0;
+	}
 
   div#bs-example-navbar-collapse-1 {
     margin: 0;
